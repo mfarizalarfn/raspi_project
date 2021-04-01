@@ -31,28 +31,28 @@ while True:
 			buzzer.off()
 			time.sleep(0.2)
 			while True:
-			GPIO.setup(4,GPIO.OUT)
-			GPIO.output(4,GPIO.HIGH)
+				GPIO.setup(21,GPIO.OUT)
+				GPIO.output(21,GPIO.HIGH)
 		#break
-	elif (id) == 184631823159:
-		print "Lampu Mati"
-		print(text)
-		buzzer.on()
-		time.sleep(0.3)
-		buzzer.off()
-		time.sleep(0.3)
-		while True:
-			GPIO.cleanup()
+		elif (id) == 184631823159:
+			print "Lampu Mati"
+			print(text)
+			buzzer.on()
+			time.sleep(0.3)
+			buzzer.off()
+			time.sleep(0.3)
+			while True:
+				GPIO.cleanup()
 			#GPIO.setup(4,GPIO.OUT)
 			#GPIO.output(4,GPIO.LOW)
 		#break
-	else:
-		print "DATA KOSONG"
+		else:
+			print "DATA KOSONG"
 
-	continue
+	continue:
 	#id,text = reader.read()
-	print "Please tap your card again"
-	id,text = reader.read()
+		print "Please tap your card again"
+		id,text = reader.read()
 
 
 
