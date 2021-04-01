@@ -1,2 +1,2 @@
 # raspi_project
-project raspberry pi learning
+Smart Home with Raspberry-pi3
